@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" charset="utf-8">
+	<meta content="width=device-width, initial-scale=1, maximum-scale=1">
+	<title>John Ellee Robado - Resume</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="icon" href="img/cpu.png">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body class="bg-image">	
+		<nav class="navbar">
+			<a  href="#"><img class="logo" src="img/cpu.png" height="30" width="30" align="center"></a>
+			<li><a class="nav-link" href="#"><span class="fa fa-home"></span> Home</a></li>
+			<li><a class="nav-link" href="gallery.html"><span class="fa fa-photo"></span> Gallery</a></li>
+			<li><a class="nav-link" href="project.html"><span class="fa fa-bookmark"> Projects</span></a></li>
+			<li><a class="nav-link" href="contact.html"><span class="fa fa-address-book"></span> Contact Us</a></li>
+		</nav>
+		<div class="parallax">
+			<img class="cpu_logo rotate" height="400" src="img/cpu.png" align="CPU">
+		</div>
+	<div id="scroll"><span></span></div>
+	<div class="container">
+		<img class="me zoom" src="img/ellee.jpg">
+		<h1 class="head">JOHN ELLEE ROBADO</h1>
+		<h5 class="head"><span class="fa fa-map-marker"></span> Address: 2057 Toting Reyes St., Kalibo, Aklan<br><span class="fa fa-phone"></span> Contact Number: 09568421306<br><span class="fa fa-envelope"></span> Email: bachrobado@gmail.com<br><span class="fa fa-map-marker"></span> Address: 2057 Toting Reyes St., Kalibo, Aklan<br><span class="fa fa-graduation-cap"></span> Course: Bachelor of Science in Information Technology<br>Major in Software Development</h5>
+		<a class="resbtn resbtn-pri" style="text-decoration: none;" href="#" onclick="showHide()">Minimize</a>
+		<div id="info" class="info">
+			<h4><span class="fa fa-info-circle rotate"></span> Personal Information</h4>
+			<p><span class="fa fa-user"></span> Gender: Male</p>
+			<p><span class="fa fa-user"></span> Age: 19</p>
+			<p><span class="fa fa-calendar"></span> Date of Birth: August 1, 1998</p>
+			<p><span class="fa fa-map-marker"></span> Place of Birth: Kalibo, Aklan</p>
+			<p><span class="fa fa-user"></span> Civil Status: Single</p>
+			<p><span class="fa fa-flag"></span> Citizenship: Filipino</p>
+			<p><span class="fa fa-user"></span> Height: 5'9</p>
+			<p><span class="fa fa-user"></span> Weight: 72kgs</p>
+			<p><span class="fa fa-plus"></span> Religion: Roman Catholic</p>
+			<p><span class="fa fa-bullhorn"></span> Dialects: Filipino, English, Akeanon, Hiligaynon</p>
+			<hr>
+
+			<h4><span class="fa fa-bookmark"></span> About Me</h4>
+			<p>I love cooking and most of all I love programming, web design. I also play Basketball</p>
+			<hr>
+
+			<h4><span class="fa fa-university"></span> Educational Background</h4>
+			<p>Pre-School: Aklan Learning Center</p>
+			<p>Elementary: St. Anne Montessori School</p>
+			<p>High School: St. Anne Montessori School</p>
+			<p>College: Central Philippine University</p>
+			<hr>
+		</div>
+		<div class="parallax_me"></div>
+		<div class="info">
+			<h4><span class="fa fa-eye"></span> Objectives</h4>
+
+			<p><span class="fa fa-chevron-right"></span> Seeking a position in life to utilize my skills and abilities and achieve professional growth<br> while being resourceful, innovative and flexible. To add valuable assets to your esteemed organization as an active member.</p>
+			<p><span class="fa fa-chevron-right"></span> To work in a dynamic professional environment with a growing<br> organization and utilize my creativity and innovative thinking for benefit of the organization and myself.</p>
+			<p><span class="fa fa-chevron-right"></span> To utilize my technical and management skills for achieving the target and developing the best performance in<br> Programmer's Guild and Information Technology Students Organization.<br> I would like to implement my innovative ideas, skills and creativity for accomplishing the projects</p>
+			<hr>
+
+			<h4><span class="fa fa-cog rotate"></span> Skills</h4>
+			<p>Cooking, Coding, Web Design and Develoment, Basketball, Driving</p>
+			<hr>
+		</div>
+		<div class="parallax_programming"></div>
+		<div class="info">
+			<h4>Interests</h4>
+			<p>Programming, Web Designing, Reading Books, Gaming, Researching</p>
+			<hr>
+			<h4>Programming Languages </h4>
+			<p>C#</p>
+			<p>Java</p>
+			<p>PHP</p>
+			<P>JavaScript</P>
+			<p>Python(Slight only)</p>
+			<p>HTML5, CSS3</p>
+			<hr>
+
+			<h4><span class="fa fa-eye"></span> Social Media</h4>
+			<p><a class="link" href="https://facebook.com/superjohnellee" target="_blank"><span class="fa fa-facebook-official"></span> Facebook</a>&nbsp;&nbsp;&nbsp;&nbsp;<a class="link" href="https://instagram.com/superjohnellee" target="_blank"><span class="fa fa-instagram"></span> Instagram</a>&nbsp;&nbsp;&nbsp;&nbsp;<a class="link" href="https://twitter.com/superjohnellee" target="_blank"><span class="fa fa-twitter"></span> Twitter</a>&nbsp;&nbsp;&nbsp;&nbsp;
+			<a class="link" href="https://www.linkedin.com/in/john-ellee-robado-37bba4138/" target="_blank"><span class="fa fa-linkedin"></span> LinkedIn</a>&nbsp;&nbsp;&nbsp;&nbsp;<a class="link" href="https://soundcloud.com/johnelleerobado" target="_blank"><span class="fa fa-soundcloud"></span> Soundcloud</a></p>
+		</div>
+		<div class="parallax2">
+			<img class="ccs_logo" src="img/ccs.jpg" height="400">
+		</div>
+	</div>
+	<div class="foot">
+		<p>Design by Ellee Solutions &copy 2018. All Rights Reserved</p>
+	</div>
+	<script>
+		//Hide Content
+		function showHide(){
+			var x = document.getElementById('info');
+
+			if (x.style.display === "none") {
+				x.style.display = "block";
+			} else {
+				x.style.display = "none";
+			}
+		}
+		//Scroll to Top
+			$(document).ready(function(){ 
+    			$(window).scroll(function(){ 
+        			if ($(this).scrollTop() > 100) { 
+            				$('#scroll').fadeIn(); 
+       			 	} else { 
+            				$('#scroll').fadeOut(); 
+        			} 
+    			}); 
+    		$('#scroll').click(function(){ 
+        		$("html, body").animate({ scrollTop: 0 }, 600); 
+        			return false; 
+    		}); 
+		});
+	</script>
+</body>
+</html>

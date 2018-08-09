@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" http-equiv="Content-Type">
+	<meta content="width=device-width, initial-scale=1.0">
+	<title>John Ellee Robado - Resume</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="icon" href="img/cpu.png">
+</head>
+<body class="contact">
+	<nav class="navbar">
+		<a href="#"><img class="logo" src="img/cpu.png" height="30" width="30"></a>
+		<li><a class="nav-link" href="index.html"><span class="fa fa-home"></span> Home</a></li>
+		<li><a class="nav-link" href="gallery.html"><span class="fa fa-photo"></span> Gallery</a></li>
+		<li><a class="nav-link" href="project.html"><span class="fa fa-bookmark"> Projects</span></a></li>
+		<li><a class="nav-link" href="contact.html"><span class="fa fa-address-book"></span> Contact Us</a></li>
+	</nav>
+	<h1 class="center">Contact Us</h1>
+	<img class="cpu_logo" src="img/cpu.png">
+	<div class="container">
+		<div class="col-md">
+			<form>
+				<div class="cont-group">
+					<div class="col-sm">
+						<input class="cont-control" type="text" name="lname" placeholder="Last name">
+					</div>
+				</div>
+				<div class="cont-group">
+					<div class="col-sm">
+						<input class="cont-control" type="text" name="fname" placeholder="First name">
+					</div>
+				</div>
+				<div class="cont-group">
+					<div class="col-sm">
+						<input class="cont-control" type="text" name="mname" placeholder="Middle name">
+					</div>
+				</div>
+				<div class="cont-group">
+					<div class="col-sm">
+						<input class="cont-control" type="email" name="email" placeholder="Email">
+					</div>
+				</div>
+				<div class="cont-group">
+					<div class="col-sm">
+						<input class="cont-control" type="text" name="comp" placeholder="Company">
+					</div>
+				</div>
+				<div class="cont-group">
+					<div class="col-sm">
+						<textarea class="cont-control" name="message" id="message" onFocus="count('message', 'text-counter', 800)" 
+						onKeyDown="count('message', 'text-counter', 800)" onKeyUp="count('message', 'text-counter', 800)" style="resize: none;" rows="7" placeholder="Message"></textarea><span id="text-counter" style="margin-top: 8px;">800</span>
+					</div>
+				</div>
+				<button class="resbtn resbtn-pri" name="send" id="send"><span class="fa fa-send"></span> SEND</button>
+			</form>
+		</div>
+	</div>
+	<script>
+		function count(textbox, counter, max){
+			var count = max - document.getElementById(textbox).value.length;
+			if (count < 0) {
+				document.getElementById(counter).innerHTML = 
+				"<span style=\"color:red;\">" + count + "</span>";
+				document,getElementById('send').disabled = true;
+			}
+		}
+	</script>
+</body>
+</html>
